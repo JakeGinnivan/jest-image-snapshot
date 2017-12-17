@@ -1,0 +1,34 @@
+{
+    "name": "jest-image-snapshot",
+    "version": "0.1.0",
+    "description": "Adds image snapshot support to Jest",
+    "main": "dist/index.js",
+    "repository": "https://github.com/JakeGinnivan/jest-image-snapshot.git",
+    "author": "Jake Ginnivan <jake@ginnivan.net>",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/jest": "^21.1.8",
+        "@types/mkdirp": "^0.5.2",
+        "@types/node": "^8.5.1",
+        "@types/resemblejs": "^1.3.28",
+        "jest": "^21.2.1",
+        "ts-jest": "^21.2.4",
+        "typescript": "^2.6.2"
+    },
+    "peerDependencies": {
+        "jest": "^21.2.1"
+    },
+    "dependencies": {
+        "canvas": "^1.6.8",
+        "dashify": "^1.0.0",
+        "mkdirp": "^0.5.1",
+        "resemblejs": "^2.5.0"
+    },
+    "jest": {
+        "transform": {
+            "^.+\\.tsx?$": "ts-jest"
+        },
+        "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+        "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+    }
+}
